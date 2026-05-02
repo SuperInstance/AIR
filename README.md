@@ -1,27 +1,38 @@
 # AIR
 
-<<<<<<< HEAD
-Adaptive Intelligence Runtime — a flexible runtime environment for deploying and managing AI models with adaptive resource allocation and inference optimization.
+Adaptive Intelligence Runtime — the runtime interface layer between agents and their environment, providing dynamic model loading, adaptive batch sizing, and resource-aware scheduling for the Cocapn fleet.
 
-## Features
-- Dynamic model loading and unloading
-- Adaptive batch sizing
-- Resource-aware scheduling
+## Brand Line
+> The medium agents breathe through — AIR is the runtime layer that makes fleet intelligence operational.
 
-## License
-MIT
-=======
-**Agentic Intelligence Runtime.** Agent interface layer for the Cocapn fleet ecosystem.
+## Installation
 
-## Status
+```bash
+pip install cocapn-air
+```
 
-Bootstrapping — license established, implementation in progress.
+## Usage
 
-## Fleet Role
+```python
+import air
 
-AIR provides the runtime interface between agents and their environment — the air they breathe, the medium they operate in.
+# Initialize runtime
+runtime = air.Runtime(
+    model="fleet/default",
+    adaptive_batching=True,
+    resource_policy="auto"
+)
 
-## License
+# Run inference
+result = runtime.execute("Process and route this request")
+```
 
-See LICENSE file.
->>>>>>> 18c8104 (docs: add AIR README — agentic intelligence runtime)
+## Fleet Context
+
+Part of the Cocapn fleet. Related repos:
+- [JetsonClaw1-vessel](https://github.com/Lucineer/JetsonClaw1-vessel) — edge-native agent case study
+- [Equipment-Swarm-Coordinator](https://github.com/SuperInstance/Equipment-Swarm-Coordinator) — multi-agent orchestration
+- [Equipment-Consensus-Engine](https://github.com/SuperInstance/Equipment-Consensus-Engine) — multi-agent deliberation
+- [plato-sdk](https://github.com/SuperInstance/plato-sdk) — agent communication protocol
+
+🦐 Cocapn fleet — lighthouse keeper architecture
